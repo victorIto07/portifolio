@@ -1,0 +1,13 @@
+{
+  "name": "rotation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd src && javac -d ../build Main.java",
+    "exec": "cd build && java Main",
+    "dev": "npm run build && npm run exec"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "pong",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"cd src && javac -d ../build Main.java",
+    "dev":"npm run build && cd build && java Main"
+  },
+  "author": "",
+  "license": "ISC"
+}
