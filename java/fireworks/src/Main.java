@@ -1,5 +1,13 @@
 import javax.swing.*;
 
+/*
+ * ------------------------------------------------|
+ *                                                 |
+ *   TRYING TO MESS WITH PARTICLES AND VELOCITY    |
+ *                                                 |
+ * ------------------------------------------------|
+ */
+
 public class Main {
     public static void main(String[] args) {
         int width = 1900;

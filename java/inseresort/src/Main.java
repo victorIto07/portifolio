@@ -1,5 +1,14 @@
 import javax.swing.*;
 import java.awt.event.*;
+
+/*
+ * -------------------------------------------------|
+ *                                                  |
+ *   VISUALIZATION OF THE INSERTION-SORT ALGORITHM  |
+ *                                                  |
+ * -------------------------------------------------|
+ */
+
 public class Main extends JFrame {
 
     public static void main(String[] args) {

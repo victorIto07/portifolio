@@ -24,9 +24,11 @@ public class Canvas extends JComponent {
     Float[] arr = new Float[qt];
 
     float col_width;
-    float padd = (float) 0.5;
+    float padd = (float) 0;
     float height_step;
     Boolean finish = false;
+    int current_index = 0;
+    boolean swaped = false;
 
     public Canvas(int w, int h) {
         this.width = w;
@@ -48,14 +50,33 @@ public class Canvas extends JComponent {
         long startTime = System.nanoTime();
         g2d.setPaint(Color.black);
         g2d.fill(this.background);
-        this.DrawRects(g2d, Color.white);
-        this.finish = this.Sort();
+        this.DrawRects(g2d);
+        if (this.current_index < this.arr.length - 1) {
+            // last usable index
+            float v1 = this.arr[current_index];
+            float v2 = this.arr[current_index + 1];
+            boolean swap = v1 > v2;
+            if (swap) {
+                float step = v1;
+                this.arr[current_index] = this.arr[current_index + 1];
+                this.arr[current_index + 1] = step;
+                this.swaped = true;
+            }
+            this.current_index++;
+        } else {
+            if (!this.swaped) {
+                this.finish = true;
+            } else {
+                this.current_index = 0;
+                this.swaped = false;
+            }
+        }
         long totalTime = System.nanoTime() - startTime;
         this.WaitTime(totalTime);
-        if (this.finish == false) {
+        if (!this.finish) {
             this.repaint();
         } else {
-            this.DrawRects(g2d, Color.green);
+            this.DrawRects(g2d);
             long total_time = System.nanoTime() - this.startTime;
             System.out.println(MessageFormat.format("Finished in {0}", total_time / 1000));
         }
@@ -71,29 +92,17 @@ public class Canvas extends JComponent {
         }
     }
 
-    void DrawRects(Graphics2D g2d, Color c) {
-        g2d.setPaint(c);
+    void DrawRects(Graphics2D g2d) {
         Rectangle2D.Float rec = new Rectangle2D.Float(0, 0, 0, 0);
         for (int i = 0; i < this.arr.length; i++) {
+            Color c = this.finish ? new Color(0, 255, 0)
+                    : (this.current_index == i ? new Color(255, 0, 0) : new Color(255, 255, 255));
+            g2d.setPaint(c);
             Float v = this.arr[i];
             rec.setFrame(i * (this.col_width + this.padd), this.height - v,
                     this.col_width, v);
             g2d.fill(rec);
         }
-    }
-
-    Boolean Sort() {
-        Boolean sorted = true;
-        for (int i = 0; i < this.arr.length - 1; i++) {
-            Float v1 = this.arr[i];
-            Float v2 = this.arr[i + 1];
-            if (v1 > v2) {
-                Array.set(this.arr, i + 1, v1);
-                Array.set(this.arr, i, v2);
-                sorted = false;
-            }
-        }
-        return sorted;
     }
 
     void Shuffle() {

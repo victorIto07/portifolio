@@ -1,5 +1,13 @@
 import javax.swing.*;
 
+/*
+ * -----------------------------------------------
+ *                                               |
+ *   CIRCLE WITH A NOISE BASED RADIUS            |
+ *                                               |
+ * ----------------------------------------------|
+ */
+
 public class Main {
     public static void main(String[] args) {
         int width = 1000;

@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Random;
 import java.awt.*; //cores e graficos e texto
 
-public class CanvasPath extends JComponent {
+public class CanvasPong extends JComponent {
 
     int width, height;
     int qt_points = 10;
@@ -19,7 +19,7 @@ public class CanvasPath extends JComponent {
     Rectangle2D.Double background;
     public Random random = new Random();
 
-    public CanvasPath(int w, int h) {
+    public CanvasPong(int w, int h) {
         this.width = w;
         this.height = h;
         this.background = new Rectangle2D.Double(0, 0, this.width, this.height);

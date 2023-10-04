@@ -7,10 +7,10 @@ public class Rotation extends JFrame {
     int width = 900;
     int height = 900;
 
-    MyCanvas canvas;
+    Canvas canvas;
 
     Rotation() {
-        this.canvas = new MyCanvas(this.width, this.height);
+        this.canvas = new Canvas(this.width, this.height);
         this.setListeners();
         this.add(this.canvas);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

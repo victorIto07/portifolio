@@ -1,3 +1,12 @@
+
+/*
+ * ----------------------------|
+ *                             |
+ *   TWO PLAYER PONG GAME      |
+ *                             |
+ * ----------------------------|
+ */
+
 class Main {
     public static void main(String[] args) {
         int width = 800;

@@ -70,6 +70,13 @@ As you'll might realise, most of them were already made in python, just one proj
 
 But still, it was a pretty fun experience to use it. Not to mention that it helped me to better understand the concept of OOP, that I barrely used on my early-stage projects.
 
+</br>
+
+**To run all codes:**
+```bash
+$ npm run dev
+```
+
 <br/>
 
 ## ESP

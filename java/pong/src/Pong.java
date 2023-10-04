@@ -7,7 +7,7 @@ class Pong extends JFrame {
     int width;
     int height;
 
-    MyCanvas canvas;
+    CanvasPong canvas;
 
     Pong(int w, int h) {
         this.width = w;
@@ -15,7 +15,7 @@ class Pong extends JFrame {
         this.setTitle("My Pong");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
-        this.canvas = new MyCanvas(this.width, this.height);
+        this.canvas = new CanvasPong(this.width, this.height);
         this.add(this.canvas);
         this.setEventListener();
         this.pack();

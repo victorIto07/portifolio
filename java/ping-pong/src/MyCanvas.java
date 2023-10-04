@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.geom.*;
 import java.util.Random;
 
-public class Canvas extends JPanel {
+public class MyCanvas extends JPanel {
 
     int width;
     int height;
@@ -18,7 +18,7 @@ public class Canvas extends JPanel {
 
     boolean cheat = false;
 
-    Canvas(int w, int h) {
+    MyCanvas(int w, int h) {
         this.width = w;
         this.height = h;
         this.setFont(new Font("Monospaced", Font.BOLD
@@ -70,7 +70,7 @@ public class Canvas extends JPanel {
                 this.player.body.x += -1;
         }
         if (this.ball.y_vel > 0 && this.CheckCollision()) {
-            if (this.random.nextInt(0, 2) == 0)
+            if (this.random.nextInt(2) == 0)
                 this.ball.x_vel *= -1;
             this.ball.y_vel *= -1;
             this.player.points++;
