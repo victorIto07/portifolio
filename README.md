@@ -3,7 +3,7 @@
 For the time I have been learning to code, my main inspiration to learn more and more about it, was to merge fun with knownledge. So, throughout the years I've made some little projects in some different languages and libraries wich was certanly the way I've learned the most. In this repo, I'm just displaying some of those little projects as a (sort of) showcase.
 </p>
 
-> Notes: Most of my most recent projects was lost by a corruption I had on my computer, the ones here are mostly from a backup that I managed to recover
+> Notes: Most of my most recent projects were lost by a corruption I had on my computer, the ones here are mostly from a backup that I managed to recover
 
 <br/>
 
@@ -13,18 +13,18 @@ Table of contents:
 
 - [Python](#python)
 - [NodeJS](#nodejs)
-- [WEB](#web)
+- [WEB Development](#web-development)
 - [Java](#java)
 - [ESP](#esp)
 
 ## Python
-This was the first language that I came across when trying to "learn how to code". I saw that it's capable of doing muiltiple stuff with a friendly learning curve.
+This was the first language that I came across when trying to "learn how to code". I saw that it's decent for many aplications such as data, mobile aplications, backend services, game development, and all of it with a with a friendly learning curve.
 
 
 Most of my time learning was spent with Python for it's simplicity. So, when I come across a new idea, concept or algorithm, I tend to have my first contact with it with Python.
 
 
-Most of my projects are graphical ones becouse, as I said, I like learning by having fun. So if you want to have a look on the files, I highly recomend installing some of those libraries to be able to run most of those codes:
+Most of my projects are graphical ones becouse, as I said, I like learning by having fun. So, I highly recomend installing some of those libraries if you want to have a look into the codes:
 
 ```bash
 $ pip install pygame pynput pyautogui opencv-python
@@ -34,6 +34,7 @@ $ pip install pygame pynput pyautogui opencv-python
 
 PS: A big thank you to <a href=https://github.com/DaFluffyPotato>DaFluffyPotato</a> and 
 <a href=https://www.youtube.com/@TheCodingTrain>TheCodingTrain</a>, those are the two main sources of ideas and tutorials that I followed along during my first projects.
+
 </br>
 
 ## NodeJS
@@ -44,7 +45,7 @@ By working with Typescript/Javascript most of my time working, I have deveolped 
 
 <br/>
 
-## WEB
+## WEB Development
 
 You've probably gotten here by It, but anyways, my only own code that I have available to show is my actual portifolio made with Angular.js.
 I've worked with it since 2021 so I have a somewhere decent knowledge with webdevelopment. Most of it by using Angular.js as the frontend framework, Express, as a backend solution using Typescript/Javascript, and for the database, SQL Server by Microsoft.
