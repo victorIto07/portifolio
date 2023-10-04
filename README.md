@@ -2,7 +2,9 @@
 For the time I have been learning to code, my main inspiration to learn more and more about it, was to merge fun with knownledge. So, throughout the years I've made some little projects in some different languages and libraries wich was certanly the way I've learned the most. In this repo, I'm just displaying some of those little projects as a (sort of) showcase.
 </p>
 
-> Notes: Most of my most recent projects were lost by a corruption I had on my computer, the ones here are mostly from a backup that I managed to recover
+> Note: Most of my most recent projects were lost by a corruption I had on my computer, the ones here are mostly from a backup that I managed to recover.
+
+> Important: I have **not** changed the code itself. The structure and errors occuring by the time remain the same. But I did change some little things, like personal/sensitive data, erros caused by version and rename the files to something understandable since most of the names were nonsense because I didn't care much abaut it by the time.
 
 <br/>
 
@@ -28,6 +30,8 @@ Most of my projects are graphical ones becouse, as I said, I like learning by ha
 ```bash
 $ pip install pygame pynput pyautogui opencv-python
 ```
+
+Inside every folder there is going to be a "main.py" file, aways execute the program by it. Inside it there is going to be a brief resume about what the code was suposed to be, and what it current does(if it's not working properly)
 
 </br>
 
